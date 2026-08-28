@@ -721,9 +721,18 @@ nav a:hover{color:#d4907c}
 }
 
 .envelope.open .letter{
-  transform:translateY(-120%);
   max-height:2000px;
   opacity:1;
+  animation:letterSlide .9s cubic-bezier(.4,0,.2,1) .3s forwards;
+  transform:translateY(-110%);
+}
+
+@keyframes letterSlide{
+  0%{transform:translateY(0);opacity:0}
+  20%{opacity:1}
+  50%{transform:translateY(-130%)}   /* sube por encima */
+  75%{transform:translateY(-105%)}   /* baja un poquito, como asentándose */
+  100%{transform:translateY(-110%)}  /* se queda superpuesta */
 }
 
 .letter h2{
