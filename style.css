@@ -714,7 +714,7 @@ nav a:hover{color:#d4907c}
   box-shadow:0 2px 10px rgba(0,0,0,.15);
   z-index:2;
   transform:translateY(0);
- 
+  transition:transform .8s cubic-bezier(.4,0,.2,1) .3s;
   overflow:hidden;
   max-height:0;
   opacity:0;
@@ -724,7 +724,7 @@ nav a:hover{color:#d4907c}
   max-height:2000px;
   opacity:1;
   animation:letterSlide .9s cubic-bezier(.4,0,.2,1) .3s forwards;
-  transform:translateY(-110%);
+  transform:translateY(-105%);
 }
 
 @keyframes letterSlide{
